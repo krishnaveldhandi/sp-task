@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  background-color: #fff;
+}
+
+.horizontal-card {
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.horizontal-card mat-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text {
+  padding: 16px;
+}

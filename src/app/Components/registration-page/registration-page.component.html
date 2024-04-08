@@ -1,0 +1,168 @@
+<div class="container">
+  <form
+    [formGroup]="registrationForm"
+    (ngSubmit)="onSubmit()"
+    class="form-container"
+  >
+    <h1 class="header1"><b>REGISTRATION FORM</b></h1>
+    <br />
+    <div class="form-row">
+      <div class="form-group">
+        <label for="firstname">FirstName:</label>
+        <input type="text" name="firstname" formControlName="firstName" />
+        <br />
+        <span
+          class="error-msg"
+          *ngIf="
+            !registrationForm?.get('firstName')?.valid &&
+            registrationForm?.get('firstName')?.touched
+          "
+        >
+          FirstName is Required
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="lastname">LastName:</label>
+        <input type="text" name="lastname" formControlName="lastName" />
+        <br />
+        <span
+          class="error-msg"
+          *ngIf="
+            !registrationForm?.get('lastName')?.valid &&
+            registrationForm?.get('lastName')?.touched
+          "
+        >
+          LastName is Required
+        </span>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="dateofbirth">Date of birth:</label>
+        <input type="date" name="dateofbirth" formControlName="dateOfBirth" />
+        <span
+          class="error-msg"
+          *ngIf="
+            !registrationForm?.get('dateOfBirth')?.valid &&
+            registrationForm?.get('dateOfBirth')?.touched
+          "
+        >
+          Date of Birth is Required
+        </span>
+      </div>
+      <div class="form-group">
+        <label>Gender:</label><br />
+        <input
+          type="radio"
+          name="gender"
+          formControlName="gender"
+          value="male"
+        />
+        Male
+        <input
+          type="radio"
+          name="gender"
+          formControlName="gender"
+          value="female"
+        />
+        Female
+        <input
+          type="radio"
+          name="gender"
+          formControlName="gender"
+          value="other"
+        />
+        Other
+        <br />
+        <span
+          class="error-msg"
+          *ngIf="
+            !registrationForm?.get('gender')?.valid &&
+            registrationForm?.get('gender')?.touched
+          "
+        >
+          Gender is Required
+        </span>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" formControlName="email" />
+        <span
+          class="error-msg"
+          *ngIf="
+            !registrationForm?.get('email')?.valid &&
+            registrationForm?.get('email')?.touched
+          "
+        >
+          Email Address is Required
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" name="mobileNumber" formControlName="mobileNumber" />
+        <span
+          class="error-msg"
+          *ngIf="
+            !registrationForm?.get('mobileNumber')?.valid &&
+            registrationForm?.get('mobileNumber')?.touched
+          "
+        >
+          Mobile Number is Required
+        </span>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" name="address" formControlName="address" />
+        <span
+          class="error-msg"
+          *ngIf="
+            !registrationForm?.get('address')?.valid &&
+            registrationForm?.get('address')?.touched
+          "
+        >
+          Address is Required
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="pinCode">Pincode:</label>
+        <input type="number" name="pinCode" formControlName="pinCode" />
+        <span
+          class="error-msg"
+          *ngIf="
+            !registrationForm?.get('pinCode')?.valid &&
+            registrationForm?.get('pinCode')?.touched
+          "
+        >
+          Pincode is Required
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <input type="text" name="country" formControlName="country" />
+        <span
+          class="error-msg"
+          *ngIf="
+            !registrationForm?.get('country')?.valid &&
+            registrationForm?.get('country')?.touched
+          "
+        >
+          Country is Required
+        </span>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group btn-group">
+        <input
+          type="submit"
+          value="Submit"
+          id="btn"
+          [disabled]="registrationForm.invalid"
+        />
+      </div>
+    </div>
+  </form>
+</div>

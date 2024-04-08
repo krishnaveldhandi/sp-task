@@ -1,0 +1,60 @@
+.custom-dialog-container {
+  background-image: linear-gradient(
+    to right top,
+    #1dc7e0,
+    #2dc2e7,
+    #43bdeb,
+    #58b7ed,
+    #6db1ec,
+    #6cb6f0,
+    #6abaf4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
+  text-align: center;
+  justify-content: center;
+}
+
+.custom-dialog-content {
+  padding: 15px;
+  color: black;
+  text-align: center;
+}
+
+.custom-dialog-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: black;
+  margin: 0;
+}
+
+.custom-dialog-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-dialog-button {
+  background-image: linear-gradient(
+    to right top,
+    #1dc7e0,
+    #2dc2e7,
+    #43bdeb,
+    #58b7ed,
+    #6db1ec,
+    #6cb6f0,
+    #6abaf4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease !important;
+}

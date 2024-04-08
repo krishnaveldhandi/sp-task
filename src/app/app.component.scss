@@ -1,0 +1,68 @@
+.extra {
+  flex: 1 1 auto;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.sidenav-wrapper {
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+}
+
+.active {
+  background-color: #74bcf7;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.mat-toolbar {
+  background-color: #2196f3;
+  color: white;
+}
+
+.mat-sidenav {
+  width: 230px;
+  padding: 20px;
+  border-radius: 4px;
+}
+.mat-button {
+  margin: 10px;
+  padding: 8px;
+  border-radius: 6px;
+}
+button span {
+  margin: 10px;
+}
+
+.mat-sidenav-content {
+  background-image: url("../assets/Sum+\ Teams\ Background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .mat-sidenav-content {
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .mat-sidenav-content {
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .mat-sidenav-content {
+    background-size: contain;
+  }
+}
