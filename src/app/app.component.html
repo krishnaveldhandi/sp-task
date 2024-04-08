@@ -42,6 +42,16 @@
         <span>Contact-Us</span>
       </button>
     </a>
+    <a
+      routerLinkActive="active"
+      [routerLink]="['weather-info']"
+      color="primary"
+    >
+      <button mat-button>
+        <mat-icon>ac_unit</mat-icon>
+        <span>Weather-Info</span>
+      </button>
+    </a>
   </mat-sidenav>
   <mat-sidenav-content>
     <router-outlet></router-outlet>

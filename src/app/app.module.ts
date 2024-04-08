@@ -18,6 +18,8 @@ import { RegistrationPopupComponent } from './registration-popup/registration-po
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
+import { WeatherInfoComponent } from './weather-info/weather-info.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { MatCardModule } from '@angular/material/card';
     AboutPageComponent,
     ContactUsComponent,
     RegistrationPopupComponent,
+    WeatherInfoComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ import { MatCardModule } from '@angular/material/card';
     MatDialogModule,
     MatTableModule,
     MatCardModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
