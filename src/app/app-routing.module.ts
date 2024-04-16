@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './Components/home-page/home-page.component';
 import { RegistrationPageComponent } from './Components/registration-page/registration-page.component';
 import { AboutPageComponent } from './Components/about-page/about-page.component';
-import { ContactUsComponent } from './Components/contact-us/contact-us.component';
+import { ContactUsComponent } from '../@angular/contact-us/contact-us.component';
 import { WeatherInfoComponent } from './weather-info/weather-info.component';
 
 const routes: Routes = [
@@ -24,10 +24,10 @@ const routes: Routes = [
     path: 'about-page',
     component: AboutPageComponent,
   },
-  {
-    path: 'contact-us',
-    component: ContactUsComponent,
-  },
+  // {
+  //   path: 'contact-us',
+  //   component: ContactUsComponent,
+  // },
   {
     path: 'weather-info',
     component: WeatherInfoComponent,

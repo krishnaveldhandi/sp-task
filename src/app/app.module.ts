@@ -12,8 +12,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterLinkActive, Routes } from '@angular/router';
 import { AboutPageComponent } from './Components/about-page/about-page.component';
-import { ContactUsComponent } from './Components/contact-us/contact-us.component';
+import { ContactUsComponent } from '../@angular/contact-us/contact-us.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { RegistrationPopupComponent } from './registration-popup/registration-popup.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table';
@@ -40,6 +41,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatButtonModule,
     ReactiveFormsModule,
+    FormsModule,
     RouterLinkActive,
     MatDialogModule,
     MatTableModule,
