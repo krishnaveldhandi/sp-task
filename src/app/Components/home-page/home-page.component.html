@@ -1,0 +1,140 @@
+<div class="bg-img"></div>
+<div class="content-container">
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../assets/1234-removebg-preview.png" alt="" />
+      </div>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="container">
+      <img
+        src="../assets/profile-image.avif"
+        alt="Your Photo"
+        class="profile-photo"
+        [@fadeInAnimation]
+      />
+      <div class="banner-content" [@fadeInAnimation]>
+        <h1>-V.SAIKRISHNA-</h1>
+        <br />
+        <br />
+        <div class="text-box">
+          <p>
+            I'm a frontend Angular developer dedicated to creating captivating
+            user experiences through clean, efficient code and innovation.
+          </p>
+
+          <ul>
+            <li>
+              <h2>My-website</h2>
+              <p>Personal project</p>
+            </li>
+            <li>
+              <h2>Role</h2>
+              <p>Frontend Developer</p>
+            </li>
+
+            <li>
+              <h2>Date</h2>
+              <p>APRIL 18, 2024</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="second-section">
+  <div class="container">
+    <div class="card-container" [ngClass]="{ 'card-animation': animateCards }">
+      <div class="card">
+        <h2><b>ABOUT ME :</b></h2>
+        <hr />
+        <p>
+          I love building cool websites with Angular. <br />
+          I'm good with HTML, CSS, and JavaScript, and I use Angular to make
+          websites awesome. <br />
+          I pay attention to detail and always make sure my websites work great.
+          <br />
+          I'm eager to learn and work with others. <br />
+          Let's make awesome stuff together! <br />
+        </p>
+      </div>
+      <div class="card">
+        <h2><b>SKILLS :</b></h2>
+        <hr />
+        <ul>
+          <li><b>Technical Skills</b>: HTML, CSS, JavaScript, TypeScript</li>
+          <li><b>Frameworks & Libraries</b>: Angular, Bootstrap</li>
+          <li><b>Version Control</b> : Git</li>
+          <li><b>Development Tools</b>: Visual Studio Code, Chrome DevTools</li>
+          <li>
+            <b>Other Skills</b>: Problem-solving, attention to detail, teamwork
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="third-section" #thirdSection>
+  <div class="container">
+    <div
+      class="card-container1"
+      [ngClass]="{ 'card1-animation': animateScroll }"
+    >
+      <div class="card1">
+        <h2><b>Projects :</b></h2>
+        <hr />
+        <p>
+          <b>Reactive Forms :</b>
+          I have worked on Registration components using reactive forms concept
+          with no. of input fields and the data of form is transferred to the
+          backend using API calls and i also worked on routing.
+          <br /><br />
+          <b> Cards :</b>
+          i have created Cards with bootstrap. the cards are designed for
+          subscription plans the plan details will get from backend using GET
+          API calls , User can select plans for subscription process.
+        </p>
+      </div>
+      <div class="card1">
+        <h2><b>Education :</b></h2>
+        <hr />
+        <ul>
+          <li><b>BTECH :</b> Trinity college of Engg & Tech, 2020-23</li>
+        </ul>
+        <ul>
+          <li>
+            <b>DIPLOMA :</b> Mother Theresa college of Engg & Tech, 2016-19
+          </li>
+        </ul>
+        <ul>
+          <li><b>SSC :</b> Sri Vivekananada Concept School,2015-16</li>
+        </ul>
+      </div>
+      <div class="card1">
+        <h2><b>Contact-Info </b>:</h2>
+        <hr />
+        <ul>
+          <li><b>NAME:</b>Veldhani SaiKrishna</li>
+        </ul>
+        <ul>
+          <li>
+            <b>EMAIL.ID:</b> <br />
+            'krishna7146@gmail.com'
+          </li>
+        </ul>
+        <ul>
+          <li><b>PHONE NO. :</b>8074826146</li>
+        </ul>
+        <ul>
+          <li><b>LinkedIN :</b>Saikrishna Veldhandi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -21,6 +21,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
 import { WeatherInfoComponent } from './weather-info/weather-info.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -47,6 +50,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatTableModule,
     MatCardModule,
     HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

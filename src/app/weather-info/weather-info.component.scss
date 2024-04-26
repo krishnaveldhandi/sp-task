@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+
   background-image: url("../weather-info/124344-miui-8-weather-background-minimal-hd.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 }
 
 .weather-card {
-  width: 300px;
+  width: 450px;
   text-align: center;
   font-family: "Times New Roman" !important;
   padding: 20px;
@@ -29,7 +29,7 @@
 .weather-image {
   display: block;
   margin: 20px auto;
-  max-width: 100%;
+  max-width: 40%;
 }
 
 .weather-card:hover {
@@ -44,21 +44,6 @@ input[type="text"] {
   width: calc(100% - 20px);
   padding: 8px;
   border-radius: 20px;
-}
-
-button {
-  width: 100%;
-  padding: 8px 0;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-  border-radius: 20px;
-}
-
-button:hover {
-  background-color: #0056b3;
 }
 
 .weather-details {
@@ -83,31 +68,47 @@ button:hover {
   right: -20px;
 }
 
-/* Add media queries for responsiveness */
-@media screen and (max-width: 1024px) {
-  .weather-card {
-    max-width: 400px; /* Adjust max-width as needed */
-    min-width: 300px; /* Adjust min-width as needed */
-  }
-}
-
 @media screen and (max-width: 768px) {
   .weather-card {
-    max-width: 350px; /* Adjust max-width as needed */
-    min-width: 250px; /* Adjust min-width as needed */
+    width: 40%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .weather-card {
-    max-width: 300px; /* Adjust max-width as needed */
-    min-width: 200px; /* Adjust min-width as needed */
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 320px) {
-  .weather-card {
-    max-width: 250px; /* Adjust max-width as needed */
-    min-width: 150px; /* Adjust min-width as needed */
-  }
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.column {
+  padding: 0 10px;
+}
+.neat-button {
+  background-color: #0085a3;
+  border: none;
+  height: 40px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 50%;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.neat-button:hover {
+  background-color: #01333e;
+  transform: scale(1.05);
+}
+
+.neat-button:active {
+  transform: translateY(2px);
 }

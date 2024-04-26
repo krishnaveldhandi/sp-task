@@ -2,26 +2,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  background-image: url("../registration-page/1325121.png");
+  height: 100vh;
+  background-image: url("../registration-page/contact-form-background.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .card {
   position: relative;
-  width: 100%;
-  max-width: 500px;
+  width: 90%;
+  max-width: 600px;
   border-radius: 10px;
   box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
-  overflow: hidden;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  // overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease !important;
   background: linear-gradient(
     to bottom right,
-    #0c0c0c 0%,
-    #0c0c0c 50%,
-    #2f2e29 50%,
-    #2f2e29 100%
+    #aaaee489 0%,
+    #aaaee489 50%,
+    #aaaee489 50%,
+    #aaaee489 100%
   );
 }
 
@@ -50,7 +50,7 @@
   padding-top: 20px;
   font-family: "Times New Roman", Times, serif;
   font-size: xx-large;
-  color: white;
+  color: #fff;
 }
 
 .form-row {
@@ -62,7 +62,7 @@
 .form-group {
   flex: 0 0 calc(50% - 10px);
   margin-bottom: 20px;
-  transition: all 0.5s ease; /* Increased transition for smooth effect */
+  transition: all 0.5s ease;
 }
 
 .form-group.label-radio {
@@ -75,9 +75,6 @@
 .form-group.label-radio label {
   margin-right: 10px;
 }
-.form-group.label-radio input[type="radio"] + label {
-  color: white; /* Set color to white for labels following radio inputs */
-}
 
 .form-group.btn-group {
   flex: 0 0 100%;
@@ -88,7 +85,8 @@
   display: block;
   margin-bottom: 5px;
   font-family: "Georgia";
-  color: white; /* Changed label text color to white */
+  font-weight: bold;
+  color: black;
 }
 
 .form-group input,
@@ -99,7 +97,7 @@
   border: 1.5px solid black;
   border-radius: 5px;
   box-sizing: border-box;
-  background-color: #fff; /* Changing input background color to white */
+  background-color: transparent;
 }
 
 .form-group input[type="radio"] {
@@ -109,7 +107,7 @@
 
 input[type="submit"] {
   width: 100%;
-  background-color: #2383d2;
+  background-color: #70abdbc9;
   color: black;
   padding: 14px 20px;
   margin: 8px 0;
@@ -124,28 +122,11 @@ input[type="submit"] {
 }
 
 #btn:not(:disabled):hover {
-  background-color: #2383d2;
+  background-color: #090754;
 }
 
 .error-msg {
   display: block;
   width: 100%;
   color: rgb(248, 20, 20);
-}
-
-/* Media Queries */
-@media screen and (max-width: 480px) {
-  .form-group {
-    flex: 0 0 calc(50% - 10px);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .form-group {
-    flex: 0 0 calc(50% - 10px);
-  }
-
-  .form-group.btn-group {
-    flex: 0 0 100%;
-  }
 }
